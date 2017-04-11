@@ -38,5 +38,5 @@ else
   SHORTNAME="Linker"
 fi
 
-$TIME_CMD -o $PROFILING_LOG -a -f "$SHORTNAME;%U;%M;$NAME" $COMPILER "$@"
+$TIME_CMD -o $PROFILING_LOG -a -f "$SHORTNAME,%U,%M,$NAME" $COMPILER "$@"
 
