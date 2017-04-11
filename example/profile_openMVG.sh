@@ -2,9 +2,10 @@ BUILD_DIR=$(PWD)
 cd $BUILD_DIR
 
 PROFILING_LOG=$BUILD_DIR/profiler.csv
-TIME_CMD=gtime
-ACTUAL_COMPILER=/usr/bin/clang++
-echo $BUILD_DIR
+
+# Change the following two lines according to your own setup:
+# TIME_CMD=gtime
+# ACTUAL_COMPILER=/usr/bin/clang++
 
 git clone --depth 1 -b develop https://github.com/openMVG/openMVG.git
 git submodule update -i
