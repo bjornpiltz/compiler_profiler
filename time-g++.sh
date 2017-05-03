@@ -8,7 +8,7 @@ then
 echo a
   touch $PROFILING_LOG
   echo -e "\n!!! logging compilation profile to $PROFILING_LOG\n"
-  echo "Filename;Time (s);Memory (KB);Path" >> $PROFILING_LOG
+  echo "Filename,Time (s),Memory (KB),Path" >> $PROFILING_LOG
 fi
 
 # get the absolute path to the default g++ compiler
